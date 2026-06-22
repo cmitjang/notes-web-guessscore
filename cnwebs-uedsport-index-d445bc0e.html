@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ued体育 · 专题介绍</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+			background: #f2f4f6;
+			color: #1f2a3a;
+			line-height: 1.7;
+			padding: 2rem 1.2rem;
+		}
+
+		.container {
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+
+		/* --- hero / 横幅 --- */
+		.hero {
+			background: #e8edf2;
+			border-radius: 28px;
+			padding: 3rem 2rem 2.8rem;
+			margin-bottom: 2.5rem;
+			box-shadow: 0 6px 12px rgba(0, 0, 0, 0.02);
+			border: 1px solid #dce2e8;
+			text-align: center;
+		}
+
+		.hero h1 {
+			font-weight: 500;
+			font-size: 2.4rem;
+			letter-spacing: 0.02em;
+			color: #1d2a3a;
+			margin-bottom: 0.6rem;
+		}
+
+		.hero h1 span {
+			font-weight: 600;
+			color: #2c5e7a;
+		}
+
+		.hero .sub {
+			max-width: 600px;
+			margin: 0.8rem auto 0;
+			color: #3a4b5c;
+			font-size: 1.05rem;
+		}
+
+		/* --- 卡片专区 --- */
+		.card-grid {
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+			margin-bottom: 3rem;
+		}
+
+		.card {
+			background: #ffffff;
+			border-radius: 24px;
+			padding: 2rem 2rem 2rem 2rem;
+			border: 1px solid #e2e9ef;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+			transition: box-shadow 0.2s;
+		}
+
+		.card:hover {
+			box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+		}
+
+		.card h2 {
+			font-size: 1.45rem;
+			font-weight: 500;
+			margin-bottom: 1rem;
+			padding-bottom: 0.5rem;
+			border-bottom: 1px solid #edf2f6;
+			color: #1e3348;
+		}
+
+		.card p {
+			margin-bottom: 1rem;
+			color: #2c3f52;
+		}
+
+		.card p:last-of-type {
+			margin-bottom: 0;
+		}
+
+		/* 行内链接样式 — 没有按钮感 */
+		a.inline-link {
+			color: #2f6480;
+			text-decoration: underline;
+			text-underline-offset: 3px;
+			text-decoration-thickness: 1px;
+			text-decoration-color: #b7cfde;
+			font-weight: 500;
+			transition: color 0.15s, text-decoration-color 0.15s;
+		}
+
+		a.inline-link:hover {
+			color: #0b3b57;
+			text-decoration-color: #0b3b57;
+		}
+
+		/* --- 页尾提示 --- */
+		.footer-note {
+			text-align: center;
+			padding: 2rem 1rem 1.8rem;
+			margin-top: 0.5rem;
+			border-top: 1px solid #dbe2e9;
+			color: #556c7c;
+			font-size: 0.95rem;
+			line-height: 1.6;
+		}
+
+		.footer-note a {
+			color: #2c5e7a;
+			text-decoration: underline;
+			text-underline-offset: 3px;
+			font-weight: 500;
+		}
+
+		.footer-note a:hover {
+			color: #0c344b;
+		}
+
+		/* 摘要/FAQ 精简块 */
+		.faq-summary {
+			background: #f8fafc;
+			border-radius: 20px;
+			padding: 1.6rem 2rem;
+			margin: 1.8rem 0 0.4rem;
+			border: 1px solid #e4eaf0;
+		}
+
+		.faq-summary h3 {
+			font-weight: 500;
+			font-size: 1.1rem;
+			margin-bottom: 0.5rem;
+			color: #1b3142;
+		}
+
+		.faq-summary p {
+			margin-bottom: 0.4rem;
+			color: #335066;
+		}
+
+		.faq-summary p:last-of-type {
+			margin-bottom: 0;
+		}
+
+		/* --- 响应式 --- */
+		@media (min-width: 680px) {
+			.hero {
+				padding: 3.8rem 3rem 3.2rem;
+			}
+			.hero h1 {
+				font-size: 3rem;
+			}
+			.card {
+				padding: 2.4rem 2.6rem;
+			}
+		}
+
+		@media (max-width: 420px) {
+			body {
+				padding: 1.2rem 0.8rem;
+			}
+			.hero h1 {
+				font-size: 1.8rem;
+			}
+			.card {
+				padding: 1.6rem 1.2rem;
+			}
+			.faq-summary {
+				padding: 1.2rem 1.2rem;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+
+		<!-- 首页横幅 -->
+		<div class="hero">
+			<h1>日常检索 · <span>ued体育</span></h1>
+			<div class="sub">
+				从查询、比照到延伸阅读——一个更安静的了解方式。
+			</div>
+		</div>
+
+		<!-- 三段自然介绍 + FAQ摘要 -->
+		<div class="card-grid">
+
+			<!-- 卡片 1：背景 / 日常查询视角 -->
+			<div class="card">
+				<h2>从一次偶然搜索开始</h2>
+				<p>
+					很多人第一次接触「ued体育」这个名称，往往是在查找某项运动资讯或比分参考的时候。
+					它不像一个突兀的广告，更像一个被反复提及的参考坐标。日常查询中，我们习惯打开几个对照窗口，
+					而 <a href="https://cnwebs-uedsport.com" class="inline-link">ued体育</a> 常常就安静地出现在其中一栏。
+				</p>
+				<p>
+					它的界面没有过度的装饰，也没有催促你做什么。如果你只是需要一个可以持续对照的页面，
+					它刚好就在那里。不需要注册，也不用经历复杂的弹窗，就这样平实地陈列着信息。
+				</p>
+			</div>
+
+			<!-- 卡片 2：对照与延伸阅读 -->
+			<div class="card">
+				<h2>对照、翻看、延伸</h2>
+				<p>
+					对于经常需要横向比较的用户来说，ued体育 提供了一种稳定的信息结构。
+					你可以同时打开两三个标签页，快速扫一眼，然后关掉。它没有用浮夸的标语吸引你停留，
+					只是安静地保持更新。许多人在阅读赛事回顾或赛季分析时，习惯把它作为一个辅助的参考源。
+				</p>
+				<p>
+					更难得的是，它不会强制改变你的浏览节奏。想深入的时候可以多翻几页，
+					只想确认某个日期或队伍名称时，几秒就能完成。这种低负担的使用感，
+					让 <a href="https://cnwebs-uedsport.com" class="inline-link">ued体育</a> 成为许多人收藏夹里长期保留的站点之一。
+				</p>
+			</div>
+
+			<!-- 卡片 3：真实场景与提示 -->
+			<div class="card">
+				<h2>使用场景与温和提醒</h2>
+				<p>
+					无论是午休时快速浏览，还是深夜整理笔记，打开一个干净的信息页面本身就是一种放松。
+					ued体育 没有密集的弹窗或刺眼的配色，视觉上更接近一本灰调的笔记本。
+				</p>
+				<p>
+					当然，任何资讯站点都只是参考工具之一。建议将多个来源相互印证，
+					保持自己的判断节奏。如果你习惯把 <a href="https://cnwebs-uedsport.com" class="inline-link">ued体育</a> 当作其中一个对照窗口，
+					它完全胜任——不多打扰，也不缺席。
+				</p>
+
+				<!-- 内嵌 FAQ 摘要（精简） -->
+				<div class="faq-summary">
+					<h3>你可能想知道的 · 简短摘要</h3>
+					<p>Q：是否需要注册才能浏览？ A：不需要，直接打开页面即可。</p>
+					<p>Q：信息更新频率如何？ A：保持常规更新节奏，内容覆盖多个运动类别。</p>
+					<p>Q：适合移动端阅读吗？ A：页面布局简洁，手机和平板均可正常使用。</p>
+				</div>
+			</div>
+
+		</div><!-- end card-grid -->
+
+		<!-- 页尾访问提示 -->
+		<div class="footer-note">
+			<p>如果你在寻找一个温和、可对照的信息页面，<a href="https://cnwebs-uedsport.com">ued体育</a> 可以作为日常参考之一。</p>
+			<p style="margin-top:0.8rem; font-size:0.88rem; color:#677e8e;">— 缓慢翻阅，保持自洽 —</p>
+		</div>
+
+	</div>
+</body>
+</html>
